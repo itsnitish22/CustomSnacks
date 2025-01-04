@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/siq_8"
+    android:elevation="@dimen/siq_4"
+    app:cardBackgroundColor="@color/snackbar_bg"
+    app:cardCornerRadius="@dimen/siq_4">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/siq_6"
+        android:paddingVertical="@dimen/siq_12">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/done"
+            android:layout_width="@dimen/siq_18"
+            android:layout_height="@dimen/siq_18"
+            android:layout_marginStart="@dimen/siq_4"
+            android:src="@drawable/ic_green_check"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/siq_10"
+            android:fontFamily="@font/inter_regular"
+            android:textColor="#C4C3C3"
+            android:textSize="@dimen/siq_text_14"
+            app:layout_constraintBottom_toBottomOf="@id/done"
+            app:layout_constraintEnd_toStartOf="@+id/viewDownload"
+            app:layout_constraintStart_toEndOf="@id/done"
+            app:layout_constraintTop_toTopOf="@id/done"
+            tools:text="Your content has be downloaded successfully!" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/viewDownload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/siq_10"
+            android:fontFamily="@font/inter_semibold"
+            android:text="View"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/siq_text_14"
+            app:layout_constraintBottom_toBottomOf="@id/done"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/title"
+            app:layout_constraintTop_toTopOf="@id/done" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
+
+
